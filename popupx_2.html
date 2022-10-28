@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popupx.css">
+</head>
+<body>
+    <button onclick="openModal()" type="button">Open Modal</button>
+
+    
+    <div class="modal">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis dolores cupiditate exercitationem dignissimos sint debitis quae fuga distinctio asperiores ipsam?
+        <button onclick="closeModal()" type="button">Close Modal</button>
+    </div>
+    <script>
+        const {classList} = document.body;
+        const openModal = ()=>{
+            classList.remove("closed");
+            classList.add("open");
+        }
+        const closeModal = ()=>{
+            classList.remove("open");
+            classList.add("closed");
+        }
+    </script>
+</body>
+</html>
